@@ -4,28 +4,111 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
-  </body>
+    <title>whiskey - Etsy</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class='container'>
+  <header>
+    <h1>Etsy</h1>
+    <input placeholder="Search for items or shope" /><button class="search">Search</button>
+    <div>
+      <a href="#">Sell on Etsy</a>
+      <a href="#">Register</a>
+      <button class="signIn">Sign in</button>
+    </div>
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="cart">Cart</div>
+  </header>
+  <div class="topNav">
+    <a href="#">Clothing & Accessories</a>
+    <a href="#">Jewlery</a>
+    <a href="#">Craft Supplies & Tools</a>
+    <a href="#">Weddings</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Home & Living</a>
+    <a href="#">Kids & Baby</a>
+    <a href="#">Vintage</a>
+  </div>
+  <div class="leftNav">
+    <div class="allCat">
+      <a href="#"> All Categories</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Art & Collectibles</a>
+      <a href="#">Weddings</a>
+      <a href="#">Clothing</a>
+      <a href="#">Paper & Party Supplies</a>
+      <a href="#">Jewelry</a>
+      <a href="#">Accessories</a>
+      <a href="#">Craft Supplies & Tools</a>
+      <a href="#">Bags & Purses</a>
+      <a href="#">Bath & Beauty</a>
+      <a href="#">Books, Movies & Music</a>
+      <a href="#">Shoes</a>
+      <a href="#">Electronics & Accessories</a>
+      <a href="#">Toys & Games</a>
+      <a href="#">Pet Supplies</a>
+    </div>
+    <div class="location">
+      <div>Shop location</div>
+      <input type="radio" name="group1" value="Anywhere" checked>Anywhere<br>
+      <input name="group1" type="radio" value="United State">United States<br>
+      <input type="radio" name="group1" value="Custom">Custom<br>
+      <input class="locBox" type="text" placeholder="Enter location">
+      <button>></button>
+    </div>
+    <div class="item">
+      <div>Item type</div>
+      <input type="radio" name="group2" value="All items" checked>All Items<br>
+      <input name="group2" type="radio" value="Handmade">Handmade<br>
+      <input type="radio" name="group2" value="Vintage">Vintage<br>
+    </div>
+    <div class="price">
+      <input type="radio" name="group3" value="Any Price" checked>Any price<br>
+      <input name="group3" type="radio" value="Under $25">Under $25<br>
+      <input type="radio" name="group3" value="$25 to $50">$25 to $50<br>
+      <input type="radio" name="group3" value="$50 to $100">$50 to $100<br>
+      <input type="radio" name="group3" value="Over $100">Over $100<br>
+      <input type="radio" name="group3" value="Custom">Custom<br>
+      <div class="custPrice">
+        <input class="priceBox" type="text" placeholder="Low">
+        <p>to</p>
+        <input class="priceBox" type="text" placeholder="High">
+        <button>></button>
+      </div>
+    </div>
+    <div class="color">
+      <div>Filter by color</div>
+      <div class="colorBox">
+        <div class="red"><a href="#"></a></div>
+        <div class="orange"><a href="#"></a></div>
+        <div class="yellow"><a href="#"></a></div>
+        <div class="green"><a href="#"></a></div>
+        <div class="blue"><a href="#"></a></div>
+        <div class="purple"><a href="#"></a></div>
+        <div class="black"><a href="#"></a></div>
+        <div class="white"><a href="#"></a></div>
+      </div>
+    </div>
+    <div class="ordering">
+      <div>Ordering options</div>
+      <input type="checkbox" name="group4" value=gift>Accepts Etsy gift cards<br>
+      <input type="checkbox" name="group4" value=custom>Customizable<br>
+    </div>
+    <div class="ship">
+      <div>Ship to</div>
+      <select>
+        <option value="USA">United States</option>
+      </select>
+    </div>
+  </div>
+  <div id="root"></div>
+</div>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
 </html>
